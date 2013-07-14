@@ -1,0 +1,49 @@
+
+  ===========================================
+  = HwGallery - simple image gallery in PHP =
+  ===========================================
+
+  version 0.85
+
+Requirements
+------------
+
+- PHP version 5
+- PHP has to have write rights to directory "thumbs"
+
+Installation
+------------
+
+1. Put files in this archive to the server by FTP.
+2. Put images into directory photos. You can use subfolders, but their names
+   may be only combination of alphanumeric chars and - symbol.
+3. Set proper write rights to the directory "thumbs".
+
+Package description
+-------------------
+
+- [photos]: directory pro images
+  - [skins]: directory for skins (templates) 
+    - [default_en]: default template (English version) 
+      - background.gif, folder.gif, next.gif, prev.gif: images for
+        default template
+      - folder_view.tpl: HTML template for display of folder content
+      - image_view.tpl: HTML template for display of image 
+      - skin.properties: the only mandatory file of template with settings
+      - styles.css: styles for default template
+    - [default_cs]: default template (Czech version)
+      - ... 
+- [thumbs]: directory for saving of automatically generated thumbails
+- hw_gallery.php: script with class HwGallery (used for generating of
+  gallery)
+- hw_gallery.properties - main gallery settings
+- hw_ini_file.php: auxiliary script with class for properties files parsing
+- index.php - basic simple script for display of gallery
+
+License
+-------
+
+Whole package is completely for free even for commercial use but there is
+one requirement: there have to be links to my homepage (http://tomashula.cz) and
+gallery page (http://tomashula.cz/index.php?tid=php-jednoducha-galerie) on every
+page of applied gallery.
